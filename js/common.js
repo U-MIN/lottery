@@ -258,6 +258,32 @@ $(document).ready(function(){
     }
     
     // ====== pop-up end ====== // 
+    // ====== pop-up start ====== //
+    boxPopOpen02();
+    function boxPopOpen02() {
+        let popBox02 = $('.pop-up02');
+        let popUpBg02 = $('.popup-bg');
+        let popClose = $('.btn-pop-close');
+        $('.btn-popup02').click(function() {
+            popBox02.addClass('on');
+            popUpBg02.addClass('over');
+            $('html').css("overflow-y","hidden");
+        });
+    }
+    boxPopClose02();
+    function boxPopClose02() {
+        let popBox02 = $('.pop-up02');
+        let popUpBg02 = $('.popup-bg');
+    
+        $('.btn-pop-close').click(function() {
+            popBox02.removeClass('on');
+            popUpBg02.removeClass('over');
+            $('html').css("overflow-y","unset");
+        });
+    
+    }
+    
+    // ====== pop-up end ====== // 
     
     
     });
