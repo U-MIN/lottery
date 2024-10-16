@@ -713,7 +713,7 @@
 
 
 // pop-up
-.pop-up {
+.pop-up, .pop-up02 {
     display: none;
     position: fixed;
     top: 50%;
@@ -1127,7 +1127,7 @@
                     margin-bottom: 6px;
                     border-radius: 50%;
                     box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.09);
-                    background-image: url(../img/main_icon/icon_quick04.svg);
+                    background-image: url(../img/main_icon/icon_quick01.svg);
                     background-repeat: no-repeat;
                     width: 3.875rem;
                     height: 3.875rem;
@@ -1145,6 +1145,27 @@
                 }
                 .txt-quick {
                     @include pre-4(0.875rem, 1.25rem);
+                }
+            }
+            &:nth-child(2) {
+                .btn-quick {
+                    .icon-quick {
+                        background-image: url(../img/main_icon/icon_quick02.svg);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .btn-quick {
+                    .icon-quick {
+                        background-image: url(../img/main_icon/icon_quick03.svg);
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .btn-quick {
+                    .icon-quick {
+                        background-image: url(../img/main_icon/icon_quick04.svg);
+                    }
                 }
             }
         }
